@@ -1,0 +1,12 @@
+body{
+  font-family:'Source Sans Pro', sans-serif;
+}
+
+.container-topo{
+  display: flex;
+  justify-content: space-between;
+}
+
+.link-topo-quartos{
+  text-decoration: none;
+}
