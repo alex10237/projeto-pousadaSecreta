@@ -4,9 +4,25 @@ body{
 
 .container-topo{
   display: flex;
+  max-width: 1024px;
   justify-content: space-between;
+ }
+
+ .container-topo a {
+   float: left;
+ }
+
+a{ 
+  text-decoration: none; font-size: 20px;
 }
 
-.link-topo-quartos{
-  text-decoration: none;
+.links a{
+  text-transform: uppercase;
+  margin-left: 10px;
+  letter-spacing: 2px;
+  color: gray;
+}
+
+.link-pousada span{
+   color: #0bb7c6
 }
