@@ -4,6 +4,7 @@ body {
   padding-top: 50px;
 }
 
+/* ***********************************  MAIN  ************************************************ */
 .container-top {
   justify-content: space-around;
   display: flex;
@@ -15,11 +16,8 @@ body {
   background-color: #fff;
   padding-top: 15px;
   padding-bottom: 15px;
+  border-bottom: 1px solid rgba(128, 128, 128, 0.2);
  }
-
-.container-top a {
-
-}
 
 .links a {
   text-transform: uppercase;
@@ -29,10 +27,6 @@ body {
   text-decoration: none;
   font-size: 1.5rem;
 }
-
-/* .links, .link-pousada{
-  margin: 0 200px;
-} */
 
 .link-pousada{
   font-size: 1.5rem;
@@ -62,4 +56,73 @@ body {
   text-align: center;
   color: #fff;
   font-size: 1.3rem;
+}
+
+/* ***********************************  ROTA/SOBRE A POUSADA  ************************************************ */
+
+.container-welcome, #rota, #sobre {
+  text-align: center;
+  font-size: 1.2rem;
+  margin: 70px;
+  color: gray;
+}
+
+.container-welcome h2, #rota h2, #sobre h2  {
+  text-transform: uppercase;
+  font-weight: normal;
+}
+
+/* ***********************************  QUARTOS  ************************************************ */
+.container-quartos {
+  display: flex;
+  justify-content: space-around;
+}
+
+.container-quartos .card-quartos img {
+  height: 300px;
+}  
+
+.container-quartos .card-quartos a {
+  text-decoration: none;
+  font-size: 1.4rem;
+  color: gray;
+}
+
+.container-quartos .card-quartos {
+  text-align: center;
+  text-transform: uppercase;
+  border-bottom: 4px solid rgba(9, 144, 140, .7)
+}
+
+/* ***********************************  SOBRE  ************************************************ */
+
+.container-sobre{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100vw;
+  border: 1px solid red;
+}
+
+.container-sobre .card-sobre img{
+  height: 150px;
+  width: 150px;
+  float: right;
+}
+
+.container-sobre .card-sobre-content {
+  float: left;
+  width: 40%;
+  padding: 10px;
+  border: 1px solid blue;
+}
+
+.container-sobre .card-sobre {
+  width: 48%;
+  border: 1px solid orange;
+}
+
+
+.container-sobre h3 {
+  font-weight: bold;
 }
