@@ -67,7 +67,12 @@ iframe {
 
 /* ***********************************  ROTA/SOBRE A POUSADA  ************************************************ */
 
-.container-welcome, #rota, #sobre, .quartos .quartos-content {
+.container-welcome,
+#rota,
+#sobre,
+#quartos-solteiro .quartos-content,
+#quartos-casal .quartos-content,
+#quartos-familia .quartos-content {
   text-align: center;
   font-size: 1.2rem;
   margin: 70px;
@@ -80,7 +85,7 @@ iframe {
 }
 
 /* ***********************************  QUARTOS  ************************************************ */
-.container-quartos, .quartos .quartos-img {
+.container-quartos, .quartos-img {
   display: flex;
   justify-content: space-around;
 }
@@ -203,12 +208,16 @@ iframe {
   height: 30vh;
 }
 
-.quartos .quartos-img {
+#quartos-solteiro .quartos-img,
+#quartos-casal .quartos-img,
+#quartos-familia .quartos-img {
   justify-content: space-evenly;
   align-items: center;
 }
 
-.quartos .quartos-img img {
+#quartos-solteiro .quartos-img img,
+#quartos-casal .quartos-img img,
+#quartos-familia .quartos-img img {
   width: 32%;
   height: 400px;
 }
