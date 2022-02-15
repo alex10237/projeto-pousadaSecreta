@@ -204,7 +204,7 @@ iframe {
 }
 
 .quartos .quartos-img {
-  justify-content: space-around;
+  justify-content: space-evenly;
   align-items: center;
 }
 
@@ -217,15 +217,23 @@ iframe {
   display: flex;
   flex-flow: row wrap;
   align-items: center;
-  margin-top: 70px;
+  margin-top: 20px;
   justify-content: center;
 }
 
 .quartos-descricao ul {
   display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  margin-bottom: 100px;
 }
 
-.quartos-descricao ul li {
+.quartos-descricao ul :nth-child(5) {
+  width: 900px;
+}  
+
+.quartos-descricao ul li{
+  width: 300px;
 }
 
 .quartos-descricao h3 {
