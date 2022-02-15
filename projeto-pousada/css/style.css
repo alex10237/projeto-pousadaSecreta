@@ -1,7 +1,15 @@
 body {
+  min-width: 1024px;
+  overflow-x: hidden;
+  overflow-y: auto;
   margin: 0;
   font-family:'Source Sans Pro', sans-serif;
   padding-top: 50px;
+}
+
+iframe {
+  width: 100vw;
+  margin: 0 auto;
 }
 
 /* ***********************************  MAIN  ************************************************ */
@@ -10,7 +18,6 @@ body {
   display: flex;
   width: 100vw;
   flex-direction: row;
-  min-width: 1024px;
   position: fixed;
   top: 0;
   background-color: #fff;
@@ -79,7 +86,7 @@ body {
 }
 
 .container-quartos .card-quartos img {
-  height: 300px;
+  height: 200px;
 }  
 
 .container-quartos .card-quartos a {
@@ -97,32 +104,66 @@ body {
 /* ***********************************  SOBRE  ************************************************ */
 
 .container-sobre{
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
   width: 100vw;
-  border: 1px solid red;
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: space-around;
 }
 
 .container-sobre .card-sobre img{
-  height: 150px;
-  width: 150px;
   float: right;
+  width: 125px;
+  height: 130px;
 }
 
 .container-sobre .card-sobre-content {
+  width: 50%;
   float: left;
-  width: 40%;
-  padding: 10px;
-  border: 1px solid blue;
+  font-size: 0.9rem;
+  text-align: justify;
 }
 
 .container-sobre .card-sobre {
-  width: 48%;
-  border: 1px solid orange;
+  margin: 10px;
+  width: 40%;
 }
 
+.container-sobre .card-sobre p {
+  width: 400px;
+}
 
 .container-sobre h3 {
   font-weight: bold;
 }
+
+/* ***********************************  RODAPÉ  ************************************************ */
+.footer {
+  padding: 15px;
+  background-color: #49997d;
+  color: #fff;
+  width: auto;
+}
+
+.footer a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.footer a img {
+  float: left;
+  width: 20px;
+}
+
+.footer .container-footer{
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.card-footer {
+  margin-bottom: 15px;
+  border-bottom: 1px solid gray;
+}
+
