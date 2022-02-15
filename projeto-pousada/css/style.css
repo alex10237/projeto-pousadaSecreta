@@ -67,20 +67,20 @@ iframe {
 
 /* ***********************************  ROTA/SOBRE A POUSADA  ************************************************ */
 
-.container-welcome, #rota, #sobre {
+.container-welcome, #rota, #sobre, .quartos .quartos-content {
   text-align: center;
   font-size: 1.2rem;
   margin: 70px;
   color: gray;
 }
 
-.container-welcome h2, #rota h2, #sobre h2  {
+.container-welcome h2, #rota h2, #sobre h2, .quartos-content h2  {
   text-transform: uppercase;
   font-weight: normal;
 }
 
 /* ***********************************  QUARTOS  ************************************************ */
-.container-quartos {
+.container-quartos, .quartos .quartos-img {
   display: flex;
   justify-content: space-around;
 }
@@ -109,6 +109,7 @@ iframe {
   flex-flow: row wrap;
   align-items: center;
   justify-content: space-around;
+  margin-bottom: 100px;
 }
 
 .container-sobre .card-sobre img{
@@ -142,28 +143,94 @@ iframe {
   padding: 15px;
   background-color: #49997d;
   color: #fff;
-  width: auto;
+  width: 100vw;
+}
+
+.footer .container-footer{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
 }
 
 .footer a {
   text-decoration: none;
   color: #fff;
+  float: right;
+  width: 212px;
 }
 
-.footer a img {
+.footer p {
+  margin-left: 40px;
+}
+
+.footer img {
   float: left;
-  width: 20px;
+  position: relative;
+  top: 20px;
 }
 
-.footer .container-footer{
+.card-footer{
+  width: 200px;
+}
+
+.container-footer {
+  border-bottom: 1px solid rgba(0, 0, 0, .1);
+  width: 920px;
+  margin: auto;
+}
+
+.container-footer .card-footer-titulo {
+  width: 125px;
+}
+
+.footer .card-footer-tel img {
+  top: 15px;
+}
+
+.card-footer-copy {
+  text-align: center;
+  margin-top: 15px;
+}
+
+/* ***********************************  PÁGINA DE QUARTOS  ************************************************ */
+
+.main {
+  background-image: url(../assets/img/img-fundo.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top center;
+  width: 100%;
+  height: 30vh;
+}
+
+.quartos .quartos-img {
+  justify-content: space-around;
+  align-items: center;
+}
+
+.quartos .quartos-img img {
+  width: 32%;
+  height: 400px;
+}
+
+.quartos-descricao {
   display: flex;
   flex-flow: row wrap;
   align-items: center;
+  margin-top: 70px;
   justify-content: center;
 }
 
-.card-footer {
-  margin-bottom: 15px;
-  border-bottom: 1px solid gray;
+.quartos-descricao ul {
+  display: flex;
 }
+
+.quartos-descricao ul li {
+}
+
+.quartos-descricao h3 {
+  width: 100%;
+  text-align: center;
+}
+
 
